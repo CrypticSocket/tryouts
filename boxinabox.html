@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+
+    <body>
+
+        <div id="boxbig">
+            <div id="boxsmall" onmouseover="changecol()" onmouseout="changecola()"></div>
+        </div>
+
+        <script>
+            function changecol(){
+                document.getElementById("boxbig").style.backgroundColor="#000000";
+           }
+            
+            function changecola(){
+                document.getElementById("boxbig").style.backgroundColor="#FFFFFF";
+            }
+        </script>
+        <style>
+            #boxbig{
+                border: 2px solid black;
+                width: 400px;
+                height: 400px;
+            }
+            
+            #boxsmall{
+                border: 2px solid green;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </body>
+</html>
