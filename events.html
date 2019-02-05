@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="./bare.min.css">
+        <title>Events</title>
+    </head>
+
+    <body>
+        
+        <div id="maincontainer">
+            <section>
+                <div id="inlinelist">
+                    <button class="but" onmouseover="gamesin()" onmouseout="gamesout()" onclick="gamesclick()" id="games">Games</button>
+                    <button class="but">Fashion</button>
+                    <button class="but">Something</button>
+                    <button class="but">Else</button>
+                </div>
+            </section>
+            <div id="mainpage">
+            </div>
+            <section txt="c">
+                    <div id="gamesdiv">
+                        <grid>
+                            <div col = "1/4">
+                                <button class="but2" id="op1" onclick="opclick()">1</button>
+                            </div>
+                            <div col = "1/4">
+                                <button class="but2">2</button>
+                            </div>
+                            <div col = "1/4">
+                                <button class="but2">3</button>
+                            </div>
+                            <div col = "1/4">
+                                <button class="but2">4</button>
+                            </div>
+                            <div col = "1/4">
+                                <button class="but2">5</button>
+                            </div>
+                            <div col = "1/4">
+                                <button class="but2">6</button>
+                            </div>
+                            <div col = "1/4">
+                                <button class="but2">7</button>
+                            </div>
+                            <div col = "1/4">
+                                <button class="but2">8</button>
+                            </div>
+                        </grid>
+                    </div>
+                </section>
+            </div>
+        <card id="boxpop" txt="c">
+            <h3>Name</h3>
+            <p>Details and an Image</p>
+            <button>Register</button>
+            <button onclick="closebox()">Close</button>
+        </card>
+        
+        <script>
+            
+            var flag=0;
+            
+            function gamesin()
+            {
+                document.getElementById("mainpage").setAttribute("class","gamesbg");
+            }
+            
+            function gamesout()
+            {
+               if(flag==0)
+               {
+                   document.getElementById("mainpage").setAttribute("class","");
+               }
+            }
+            
+            function gamesclick()
+            {
+                flag=1;
+                document.getElementById("games").style.backgroundColor = "green";
+                document.getElementById("mainpage").setAttribute("class", "gamesbg");
+                
+                document.getElementById("gamesdiv").style.display ="block";
+            }
+            
+            function opclick()
+            {
+                document.getElementById("boxpop").style.display = "block";
+                document.getElementById("maincontainer").style.filter = "blur(10px) grayscale(1)";
+            }
+            
+            function closebox()
+            {
+                document.getElementById("boxpop").style.display = "none";
+                document.getElementById("maincontainer").style.filter = "";
+            }
+        </script>
+        <style>
+            
+            body{
+                padding: 0;
+                margin: 0;
+            }
+            
+            #maincontainer{
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+            }
+            
+            #inlinelist{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .but{
+                border: 2px solid black;
+                width: 6em;
+                height: 3em;
+                border-radius: 2em;
+            }
+            
+            .but2{
+                border: 2px solid black;
+                width: 8em;
+                height: 3em;
+                border-radius: 2em;
+                background-color: darkslategray;
+            }
+            
+            .gamesbg{
+                background: url(./game.gif);
+                background-repeat: no-repeat;
+                background-size: 100vw 100vh;
+                filter: opacity(30%) blur(4px);
+            }
+            
+            #mainpage{
+                width: 100vw;
+                height: 80vh;
+                background-color: black;
+                position: absolute;
+            }
+            
+            #games:hover{
+                background-color: gray;
+                box-shadow: 0px 0px 8px red;
+            }
+            
+            #games:active{
+                background-color: blue;
+            }
+            
+            .but2:hover{
+                background-color: darkslateblue
+            }
+            
+            #gamesdiv{
+                display: none;
+            }
+            
+            #boxpop{
+                display: none;
+                position: absolute;
+                width: 80vw;
+                height: 30vw;
+                top: 0;
+                left: 0;
+                margin: 10rem;
+            }
+        
+        </style>
+    </body>
+</html>
