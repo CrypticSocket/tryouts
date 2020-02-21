@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parllax Effect</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg{
+            width: 99.8vw;
+            height: 100vh;
+            position: absolute;
+            z-index: -1;
+            background: linear-gradient(to top, black 0%, white 100%);
+        }
+
+        .textcom{
+            display: flex;
+            justify-content: center;
+            line-height: 100vh;
+        }
+
+        body{
+            height: 300vh;
+        }
+
+        .circle{
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            border-radius: 100%;
+        }
+
+        .text{
+            color: rgba(0, 0, 0,0.8);
+            filter: blur(1px);
+        }
+
+        .back{
+            color: rgba(0, 0, 0,0.6);
+            filter: blur(2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="bg"></div>
+        <h1 class="textcom"><span class="front">Front</span><span class="text">Middle</span><span class="back">Back</span></h1>
+        <div class="circle right"></div>
+        <div class="circle diagonal"></div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', scrollspeed);
+
+        function scrollspeed(){
+            var text = document.getElementsByClassName("text")[0];
+            var front = document.getElementsByClassName("front")[0];
+            var back = document.getElementsByClassName("back")[0];
+            var right = document.getElementsByClassName("right")[0];
+            var diagonal = document.getElementsByClassName("diagonal")[0];
+            var scrollval = window.pageYOffset;
+            text.style.transform = "translate3d(0px,"+(-scrollval*1)+"px,0px)"
+            front.style.transform = "translate3d(0px,"+(-scrollval*2)+"px,0px)"
+            back.style.transform = "translate3d(0px,"+(-scrollval*0)+"px,0px)"
+            right.style.transform = "translate3d("+(scrollval*5)+"px,"+(-scrollval*0)+"px,0px)"
+            diagonal.style.transform = "translate3d("+(scrollval*2)+"px,"+(-scrollval*2)+"px,0px)"
+        }
+    </script>
+</body>
+</html>
