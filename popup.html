@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="./bare.min.css">
+    <style>
+
+        body{
+            margin: 10px;
+        }
+
+        .databox:hover{
+        box-shadow: 2px 2px 4px 2px #666 !important;
+        }
+
+        .databox:active{
+        box-shadow: 1px 1px 2px 2px #333 !important;
+        }
+
+        .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 200ms ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: white;
+        width: 80%;
+        max-width: 80%;
+        padding: 20px;
+        }
+
+        .closebtn{
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 2rem;
+            font-weight: bold;
+            position: absolute;
+            right: 10%;
+            z-index: 10;
+        }
+
+        .data{
+            max-height: 300px;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <card class="databox">
+        <h1>HI</h1>
+        <p>Hola</p>
+    </card>
+    <card class="databox">
+        <h1>No</h1>
+        <p>Bye</p>
+        <p class="data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ducimus voluptatibus, incidunt repellat quam neque reprehenderit necessitatibus omnis explicabo cupiditate libero, quod tempora laborum repellendus! Deleniti, voluptatum placeat mollitia omnis est voluptate. Magnam atque culpa possimus neque obcaecati illo vel ex accusamus similique deleniti earum, molestiae quo sed temporibus in corporis sequi hic est quidem laudantium dignissimos nostrum quia harum itaque? Quas debitis animi harum blanditiis ducimus nihil delectus esse laudantium labore tempore quisquam non, incidunt, amet sed omnis, officiis ea eligendi aperiam. Provident error laudantium, rem sint minima culpa voluptatibus accusantium. Unde beatae autem et a tenetur, quaerat voluptatum.</p>
+    </card>
+</body>
+<script async>
+    var box = document.getElementsByClassName("databox")
+    for(var i=0;i<box.length;i++)
+    {
+        box[i].addEventListener('click',doThis)
+    }
+    function doThis(event)
+    {   
+        if(event.target!==this)
+        {
+           var inner = event.target.parentNode.innerHTML
+           var parent = event.target.parentNode
+        }
+        else{
+            var inner = event.target.innerHTML
+            var parent = event.target
+        }
+        var popup = document.createElement("div")
+        var btn = document.createElement("button")
+        btn.innerHTML="&times;"
+        btn.setAttribute('class','closebtn')
+        btn.setAttribute('onclick','remThis()')
+        popup.appendChild(btn)
+        popup.setAttribute('class','modal')
+        popup.setAttribute('id','deleteme')
+        popup.innerHTML+=inner;
+        parent.parentNode.appendChild(popup)
+    }
+
+    function remThis()
+    {
+        document.getElementById("deleteme").remove();
+    }
+</script>
+</html>
